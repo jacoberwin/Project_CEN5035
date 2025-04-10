@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employer Dashboard</title>
+</head>
+<body>
+  <h2>Welcome, Employer</h2>
+  <p>Company: [Placeholder]</p>
+
+  <h3>Total Credits Earned by Employees: [Placeholder]</h3>
+
+  <h3>Buy/Sell Credits</h3>
+  <form action="employer-dashboard.html" method="get">
+    <label>Action:</label>
+    <select name="action" required>
+      <option value="buy">Buy</option>
+      <option value="sell">Sell</option>
+    </select><br><br>
+
+    <label>Amount:</label><br>
+    <input type="number" name="amount" min="1" required><br><br>
+
+    <button type="submit">Request Approval</button>
+  </form><br>
+
+  <h3>Employee Logs</h3>
+  <p>[Employee travel submissions – Placeholder]</p>
+
+  <a href="index.html">Logout</a>
+</body>
+</html>

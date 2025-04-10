@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login - Carbon Credit Platform</title>
+</head>
+<body>
+  <h2>Login</h2>
+
+  <form onsubmit="return redirectUser()">
+    <label>Company Name:</label><br>
+    <input type="text" id="company" required><br><br>
+
+    <label>Username:</label><br>
+    <input type="text" id="username" required><br><br>
+
+    <label>Password:</label><br>
+    <input type="password" id="password" required><br><br>
+
+    <label>Role:</label><br>
+    <select id="role" required>
+      <option value="">-- Select Role --</option>
+      <option value="employee">Employee</option>
+      <option value="employer">Employer</option>
+      <option value="admin">Admin</option>
+    </select><br><br>
+
+    <button type="submit">Login</button>
+  </form>
+
+  <script>
+    function redirectUser() {
+      const role = document.getElementById("role").value;
+
+      if (role === "employee") {
+        window.location.href = "employee-dashboard.html";
+      } else if (role === "employer") {
+        window.location.href = "employer-dashboard.html";
+      } else if (role === "admin") {
+        window.location.href = "admin-dashboard.html";
+      } else {
+        alert("Please select a valid role.");
+      }
+      return false;
+    }
+  </script>
+</body>
+</html>
