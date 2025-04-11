@@ -7,7 +7,7 @@ const EmployeeDashboard = () => {
   const company = "Placeholder Company"; // Replace with actual data from login or context
   const username = "Placeholder User";   // Replace with real username
   const totalMiles = 125;                // Example dummy data
-  const totalCredits = 46;               // Example dummy data
+  const totalCredits = 47;               // Example dummy data
 
   return (
     <div style={{ padding: "2rem" }}>
